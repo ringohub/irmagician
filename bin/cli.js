@@ -47,6 +47,12 @@ Examples
   });
 
   switch (cli.input[0]) {
+    case 'dump':
+      await irm.dump(cli.input[1]);
+      break;
+    case 'bank':
+      await irm.bankSet(cli.input[1]);
+      break;
     case 'led':
       await irm.led(cli.input[1] === 'on');
       break;
