@@ -47,6 +47,9 @@ Examples
   });
 
   switch (cli.input[0]) {
+    case 'temp':
+      await irm.temp();
+      break;
     case 'info':
       await irm.info();
       break;
@@ -56,6 +59,7 @@ Examples
     case 'version':
       await irm.version();
       break;
+    //
     default:
       cli.showHelp();
       break;
