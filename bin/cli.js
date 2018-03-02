@@ -47,6 +47,9 @@ Examples
   });
 
   switch (cli.input[0]) {
+    case 'led':
+      await irm.led(cli.input[1] === 'on');
+      break;
     case 'temp':
       await irm.temp();
       break;
