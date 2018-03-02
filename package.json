@@ -4,9 +4,9 @@
   "description": "CLI Tool for irMagician",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint"
   },
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git@github.com:tamaki-shingo/irmagician.git"
   },
@@ -19,12 +19,16 @@
     "co": "^4.6.0",
     "colors": "^1.1.2",
     "meow": "^3.7.0",
-    "serialport": "^3.0.0"
+    "serialport": "6.0.5"
   },
   "devDependencies": {
-    "eslint": "^2.11.0"
+    "prettier": "1.11.1",
+    "xo": "0.20.2"
   },
   "bin": {
-    "irMagician": "bin/cli.js"
+    "irm": "bin/cli.js"
+  },
+  "xo": {
+    "space": true
   }
 }
